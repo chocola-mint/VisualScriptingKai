@@ -22,13 +22,13 @@ namespace CHM.VisualScriptingPlus.Editor
         => this.DefaultCompareTo(other);
         public readonly string GetInfo()
         {
-            return $"<b><size=14>{unit.Option().haystack}</size></b>"
+            return $"<b><size=14>{unit.NodeName()}</size></b>"
             + $"\n{Source.Info}";
         }
         public readonly Texture2D GetIcon(int resolution)
         {
             // Cursed operator overload. Gets texture with resolution.
-            return unit.Option().icon[resolution];
+            return unit.NodeIcon()[resolution];
         }
     }
 }

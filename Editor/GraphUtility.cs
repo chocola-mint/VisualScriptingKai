@@ -122,7 +122,7 @@ namespace CHM.VisualScriptingPlus.Editor
                 // Why isn't this out??? Even though it is always overwritten internally???
                 // Note: Bigger outScore -> better
                 long outScore = 0;
-                if(FuzzySearch.FuzzyMatch(pattern, unit.Option().haystack, ref outScore))
+                if(FuzzySearch.FuzzyMatch(pattern, unit.NodeName(), ref outScore))
                 {
                     yield return new NodeTrace()
                     {
