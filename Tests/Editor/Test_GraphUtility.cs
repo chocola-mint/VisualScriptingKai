@@ -15,7 +15,7 @@ namespace CHM.VisualScriptingPlus.Editor.Tests
         public void TestGraphQueries()
         {
             var testcases = GraphUtility.FindAllGraphAssets(
-                new string[]{ "Assets/VisualScriptingPlus/Tests/Editor" });
+                new string[]{ "Packages/com.chocola-mint.visual-scripting-plus/Tests/Editor" });
             Assert.That(
                 testcases.Select(x => x.Name), 
                 Is.EquivalentTo(new HashSet<string>{
