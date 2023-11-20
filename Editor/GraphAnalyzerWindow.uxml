@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="QueryResultsListView" src="project://database/Assets/VisualScriptingPlus/Editor/QueryResultsListView.uxml?fileID=9197481963319205126&amp;guid=24f8610520013304f851e3fd865c37df&amp;type=3#QueryResultsListView" />
+    <ui:DropdownField label="Minimum Warning Level" index="1" choices="Info,Caution,Severe,Error" name="query-warning-level" tooltip="Warnings equal or greater than this level will be shown below." />
+    <ui:TextField picking-mode="Ignore" label="Search Folders" name="query-folders" multiline="true" tooltip="A list of folders to search in. You can specify multiply folders on different lines." style="height: auto;" />
+    <ui:VisualElement name="divider" style="height: 1px; border-bottom-width: 2px; border-left-color: rgb(35, 35, 35); border-right-color: rgb(35, 35, 35); border-top-color: rgb(35, 35, 35); border-bottom-color: rgb(35, 35, 35); min-height: initial; margin-top: 2px;" />
+    <ui:Instance template="QueryResultsListView" style="height: 100%;" />
+</ui:UXML>
