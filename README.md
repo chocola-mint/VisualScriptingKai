@@ -31,6 +31,7 @@ A powerful debugging node that lets you run Visual Scripting code anytime, anywh
 ## Installation
 
 * Visual Scripting Plus is distributed as a git package. Use Unity's [Package Manager](https://docs.unity3d.com/Manual/upm-ui-giturl.html) and install using this repository's URL: `https://github.com/chocola-mint/VisualScriptingPlus.git`
+* After installing, go to `Project Settings > Visual Scripting` and click `Regenerate Nodes` to enable the Test Node feature, if needed.
 
 ## Limitations
 
