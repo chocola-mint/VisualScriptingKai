@@ -65,12 +65,13 @@ namespace CHM.VisualScriptingPlus.Editor
                 {
                     var mono = obj as MonoBehaviour;
                     var gameObject = mono.gameObject;
+                    info += $" ({gameObject.name})";
                     // Only two cases: In a scene or in a prefab.
                     // We don't care about prefab instances in a scene, as they're
                     // just in a scene in that case.
                     if(gameObject.scene != null)
                     {
-                        info += $"\n<b>Scene Path:</b> {gameObject.scene.path} ({gameObject.name})";
+                        info += $"\n<b>Scene Path:</b> {gameObject.scene.path}";
                     }
                     else 
                     {
