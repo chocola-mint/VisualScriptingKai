@@ -29,6 +29,8 @@ A runtime tool that automatically pauses the game in Play Mode whenever a graph 
 
 ### Test Node
 
+https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/0ae2b1b1-0729-4e25-989a-f527cdfc522f
+
 A powerful debugging node that lets you run Visual Scripting code anytime, anywhere, by just double-clicking on it. Use it as a way to test logic quickly.
 
 ## Requirements
