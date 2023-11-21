@@ -7,6 +7,8 @@ Live demo featuring a [non-trivial Visual Scripting project](https://github.com/
 
 https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/61d6870b-c937-4a53-bab1-e8907fe38a5a
 
+(The project above has over 700 graph units, over 50 states, and over 40 state transitions, yet Visual Scripting Plus still performs extremely smoothly!)
+
 Feel free to request additional features in the [Issues](https://github.com/chocola-mint/VisualScriptingPlus/Issues) page.
 
 ## Features
