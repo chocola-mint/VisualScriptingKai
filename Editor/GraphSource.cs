@@ -70,7 +70,7 @@ namespace CHM.VisualScriptingPlus.Editor
                     // just in a scene in that case.
                     if(gameObject.scene != null)
                     {
-                        info += $"\n<b>Scene Path:</b> {gameObject.scene.path}";
+                        info += $"\n<b>Scene Path:</b> {gameObject.scene.path} ({gameObject.name})";
                     }
                     else 
                     {
