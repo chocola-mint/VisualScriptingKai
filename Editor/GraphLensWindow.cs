@@ -29,9 +29,9 @@ namespace CHM.VisualScriptingPlus.Editor
         };
         private static class EditorPrefKeys
         {
-            public const string QueryType = "GraphLens/query-type";
-            public const string QueryFolders = "GraphLens/query-folders";
-            public const string QueryString = "GraphLens/query-string";
+            public static readonly string QueryType = Application.dataPath + "/GraphLens/query-type";
+            public static readonly string QueryFolders = Application.dataPath + "/GraphLens/query-folders";
+            public static readonly string QueryString = Application.dataPath + "/GraphLens/query-string";
         }
         [MenuItem("Window/Visual Scripting/Graph Lens")]
         public static void OpenWindow()

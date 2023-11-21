@@ -23,8 +23,8 @@ namespace CHM.VisualScriptingPlus.Editor
         };
         private static class EditorPrefKeys
         {
-            public const string QueryWarningLevel = "GraphAnalyzer/query-warning-level";
-            public const string QueryFolders = "GraphAnalyzer/query-folders";
+            public static readonly string QueryWarningLevel = Application.dataPath + "/GraphAnalyzer/query-warning-level";
+            public static readonly string QueryFolders = Application.dataPath + "/GraphAnalyzer/query-folders";
         }
         [MenuItem("Window/Visual Scripting/Graph Analyzer")]
         public static void OpenWindow()

@@ -19,6 +19,10 @@ namespace CHM.VisualScriptingPlus.Editor
             // TODO: Add Graph Lens icon to GUIContent.
             wnd.titleContent = new GUIContent("Graph Debugger");
         }
+        private static class EditorPrefKeys
+        {
+            public static readonly string DebugEnabled = Application.dataPath + "/GraphDebugger/debug-enabled";
+        }
         protected override void OnCreateGUI()
         {
             // Each editor window contains a root VisualElement object
@@ -32,9 +36,9 @@ namespace CHM.VisualScriptingPlus.Editor
             FetchElement(root, "debug-enabled", out debugEnabled);
             FetchElement(root, "query-results", out queryResultsListView);
 
-            debugEnabled.value = EditorPrefs.GetBool("debug-enabled", false);
+            debugEnabled.value = EditorPrefs.GetBool(EditorPrefKeys.DebugEnabled, false);
             debugEnabled.RegisterValueChangedCallback(changeEvent => {
-                EditorPrefs.SetBool("debug-enabled", changeEvent.newValue);
+                EditorPrefs.SetBool(EditorPrefKeys.DebugEnabled, changeEvent.newValue);
             });
             queryResultsListView = root.Q<QueryResultsListView>("query-results");
             queryResultsListView.style.backgroundColor = new Color(0.5f, 0.25f, 0.25f);
