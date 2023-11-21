@@ -15,7 +15,7 @@ Feel free to request additional features in the [Issues](https://github.com/choc
 
 ### Graph Lens
 
-A fuzzy search tool that can hunt down nodes and sticky notes in your graphs. Clicking the search results lets you jump straight to where the node is.
+A fuzzy search tool that can hunt down nodes, sticky notes, states, and state transitions in your graphs. Clicking the search results lets you jump straight to where the node is.
 
 You can also use the sticky note search tool as a way to hunt down TODOs. This can be a powerful tool that lets you navigate through a large graph with ease.
 
