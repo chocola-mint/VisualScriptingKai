@@ -5,7 +5,7 @@ Quality-of-life extensions to Unity Visual Scripting. Features not just a node s
 
 Live demo featuring a [non-trivial Visual Scripting project](https://github.com/chocola-mint/U1W_ShijiQuest):
 
-https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/61d6870b-c937-4a53-bab1-e8907fe38a5a
+https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/a8523873-c5b5-4836-9e55-5f607c9865a6
 
 (The project above has over 700 graph units, over 50 states, and over 40 state transitions, yet Visual Scripting Plus still performs extremely smoothly!)
 
@@ -37,7 +37,7 @@ A runtime tool that automatically pauses the game in Play Mode whenever a graph 
 
 ### Test Node
 
-https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/0ae2b1b1-0729-4e25-989a-f527cdfc522f
+https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/95662b4f-e4ae-4c6d-9547-011eb86e842a
 
 (Events > VS Plus > Test)
 
