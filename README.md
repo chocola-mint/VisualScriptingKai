@@ -15,6 +15,8 @@ Feel free to request additional features in the [Issues](https://github.com/choc
 
 ### Graph Lens
 
+(Window > Visual Scripting > Graph Lens)
+
 A fuzzy search tool that can hunt down nodes, sticky notes, states, and state transitions in your graphs. Clicking the search results lets you jump straight to where the node is.
 
 You can also use the sticky note search tool as a way to hunt down TODOs. This can be a powerful tool that lets you navigate through a large graph with ease.
@@ -23,15 +25,21 @@ Note that for elements that can have their names changed manually (Sticky Notes 
 
 ### Graph Analyzer
 
+(Window > Visual Scripting > Graph Analyzer)
+
 A tool that can hunt down graph warnings. You can specify the minimum warning level to filter out unimportant warnings. Useful for cleaning up unused nodes and finding broken nodes quickly.
 
 ### Graph Debugger
+
+(Window > Visual Scripting > Graph Debugger)
 
 A runtime tool that automatically pauses the game in Play Mode whenever a graph encounters an exception. The stack trace is laid out as well so you can quickly figure out why the exception happened. This can save you a lot of time by skipping the part where you have to dig through a long chain of red nodes to find the exception-causing node.
 
 ### Test Node
 
 https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/0ae2b1b1-0729-4e25-989a-f527cdfc522f
+
+(Events > VS Plus > Test)
 
 A powerful debugging node that lets you run Visual Scripting code anytime, anywhere, by just double-clicking on it. Use it as a way to test logic quickly.
 
