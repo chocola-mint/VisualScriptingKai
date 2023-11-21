@@ -10,10 +10,13 @@ namespace CHM.VisualScriptingPlus.Editor
         public static IEnumerable<T> FindAssetsByType<T>(string[] searchInFolders = null) where T : Object
         {
             // Do this check ourselves so AssetDatabase.FindAssets won't throw.
-            foreach(string folder in searchInFolders)
+            if(searchInFolders != null)
             {
-                if(!AssetDatabase.IsValidFolder(folder))
-                    yield break;
+                foreach(string folder in searchInFolders)
+                {
+                    if(!AssetDatabase.IsValidFolder(folder))
+                        yield break;
+                }
             }
             foreach(var guid in AssetDatabase.FindAssets($"t:{typeof(T)}", searchInFolders))
             {

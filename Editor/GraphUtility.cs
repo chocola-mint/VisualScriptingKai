@@ -232,6 +232,28 @@ namespace CHM.VisualScriptingPlus.Editor
             }
             else Debug.LogWarning($"Unknown graph type: {GraphWindow.activeContext.graph.GetType()}");
         }
+        [MenuItem("Tools/Visual Scripting/Print graph statistics to console")]
+        public static void PrintGraphStatistics()
+        {
+            var sources = FindAllGraphSources().ToList();
+            int unitCount = 0, stickyNoteCount = 0, stateCount = 0, transitionCount = 0;
+            foreach(var source in sources)
+                foreach(var unit in source.GetUnitsRecursive())
+                    unitCount++;
+            foreach(var source in sources)
+                foreach(var stickyNote in source.GetStickyNotesRecursive())
+                    stickyNoteCount++;
+            foreach(var source in sources)
+                foreach(var state in source.GetStatesRecursive())
+                    stateCount++;
+            foreach(var source in sources)
+                foreach(var stateTransition in source.GetStateTransitionsRecursive())
+                    transitionCount++;
+            Debug.Log($"Number of Units: {unitCount}");
+            Debug.Log($"Number of Sticky Notes: {stickyNoteCount}");
+            Debug.Log($"Number of States: {stateCount}");
+            Debug.Log($"Number of State Transitions: {transitionCount}");
+        }
         public static GraphSource GetEditedGraph()
         {
             var rootObject = GraphWindow.activeContext?.reference?.rootObject;
