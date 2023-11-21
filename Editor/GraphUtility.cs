@@ -122,7 +122,7 @@ namespace CHM.VisualScriptingPlus.Editor
                 // Why isn't this out??? Even though it is always overwritten internally???
                 // Note: Bigger outScore -> better
                 long outScore = 0;
-                if(FuzzySearch.FuzzyMatch(pattern, unit.NodeName(), ref outScore))
+                if(FuzzySearch.FuzzyMatch(pattern, unit.Name(), ref outScore))
                 {
                     yield return new NodeTrace()
                     {
@@ -154,6 +154,60 @@ namespace CHM.VisualScriptingPlus.Editor
                     yield return new StickyNoteTrace()
                     {
                         stickyNote = stickyNote,
+                        Reference = GraphReference.New((Object) source, path, false),
+                        Source = source,
+                        Score = outScore,
+                    };
+                }
+            }
+        }
+        public static IEnumerable<IGraphElementTrace> FindStates(IEnumerable<GraphSource> sources, string pattern, bool embedSubgraphsOnly = true)
+        {
+            // TODO: Expose this visited set as parameter
+            HashSet<Graph> visited = new();
+            foreach(var source in sources)
+                foreach(var nodeTrace in FindStates(source, pattern, embedSubgraphsOnly, visited))
+                    yield return nodeTrace;
+        }
+        public static IEnumerable<IGraphElementTrace> FindStates(GraphSource source, string pattern, bool embedSubgraphsOnly = true, HashSet<Graph> visited = null)
+        {
+            if(pattern.Length == 0) 
+                yield break;
+            foreach (var (state, path) in source.GetStatesRecursive(embedSubgraphsOnly, visited))
+            {
+                long outScore = 0;
+                if(FuzzySearch.FuzzyMatch(pattern, state.Name(), ref outScore))
+                {
+                    yield return new StateTrace()
+                    {
+                        state = state,
+                        Reference = GraphReference.New((Object) source, path, false),
+                        Source = source,
+                        Score = outScore,
+                    };
+                }
+            }
+        }
+        public static IEnumerable<IGraphElementTrace> FindStateTransitions(IEnumerable<GraphSource> sources, string pattern, bool embedSubgraphsOnly = true)
+        {
+            // TODO: Expose this visited set as parameter
+            HashSet<Graph> visited = new();
+            foreach(var source in sources)
+                foreach(var nodeTrace in FindStateTransitions(source, pattern, embedSubgraphsOnly, visited))
+                    yield return nodeTrace;
+        }
+        public static IEnumerable<IGraphElementTrace> FindStateTransitions(GraphSource source, string pattern, bool embedSubgraphsOnly = true, HashSet<Graph> visited = null)
+        {
+            if(pattern.Length == 0) 
+                yield break;
+            foreach (var (stateTransition, path) in source.GetStateTransitionsRecursive(embedSubgraphsOnly, visited))
+            {
+                long outScore = 0;
+                if(FuzzySearch.FuzzyMatch(pattern, stateTransition.Name(), ref outScore))
+                {
+                    yield return new StateTransitionTrace()
+                    {
+                        stateTransition = stateTransition,
                         Reference = GraphReference.New((Object) source, path, false),
                         Source = source,
                         Score = outScore,

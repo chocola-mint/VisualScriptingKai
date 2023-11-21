@@ -23,14 +23,14 @@ namespace CHM.VisualScriptingPlus.Editor
         }
         public readonly string GetInfo()
         {
-            return $"<b><size=14>{unit.NodeName()}</size></b>"
+            return $"<b><size=14>{unit.Name()}</size></b>"
             + $"\n{Source.ShortInfo}"
             + $"\n<b>{warning.MessageType}:</b> {warning.message}";
         }
         public readonly Texture2D GetIcon(int resolution)
         {
             // Cursed operator overload. Gets texture with resolution.
-            return unit.NodeIcon()[resolution];
+            return unit.Icon()[resolution];
         }
     }
 }

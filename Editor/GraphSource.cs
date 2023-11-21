@@ -55,7 +55,7 @@ namespace CHM.VisualScriptingPlus.Editor
                 // Casting to Unity.Object extracts the union. (See above)
                 var obj = (Object)this;
                 // Note: Uses VisualScripting's built-in extension methods here for prettifying.
-                string info = $"<b>Source:</b> {obj.GetType().HumanName()}";
+                string info = $"<b>Source:</b> {obj.name} ({obj.GetType().HumanName()})";
                 // Downcast as needed.
                 if(obj is ScriptableObject so)
                 {
@@ -65,7 +65,6 @@ namespace CHM.VisualScriptingPlus.Editor
                 {
                     var mono = obj as MonoBehaviour;
                     var gameObject = mono.gameObject;
-                    info += $" ({gameObject.name})";
                     // Only two cases: In a scene or in a prefab.
                     // We don't care about prefab instances in a scene, as they're
                     // just in a scene in that case.

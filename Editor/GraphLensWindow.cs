@@ -22,10 +22,14 @@ namespace CHM.VisualScriptingPlus.Editor
         {
             public static readonly string Nodes = "Nodes";
             public static readonly string StickyNotes = "Sticky Notes";
+            public static readonly string States = "States";
+            public static readonly string StateTransitions = "State Transitions";
         }
         private readonly List<string> queryOptions = new(){
             QueryType.Nodes,
             QueryType.StickyNotes,
+            QueryType.States,
+            QueryType.StateTransitions,
         };
         private static class EditorPrefKeys
         {
@@ -134,6 +138,18 @@ namespace CHM.VisualScriptingPlus.Editor
                     sources,
                     queryString.value));
             }
+            else if (queryType.value == QueryType.States)
+            {
+                queryResultsListView.LoadQueryResults(FindStates(
+                    sources,
+                    queryString.value));
+            }
+            else if (queryType.value == QueryType.StateTransitions)
+            {
+                queryResultsListView.LoadQueryResults(FindStateTransitions(
+                    sources,
+                    queryString.value));
+            }
             else throw new System.ArgumentException($"Unknown query type: {queryType.text}");
         }
         private void QueryEditedGraph()
@@ -154,6 +170,22 @@ namespace CHM.VisualScriptingPlus.Editor
                     queryResultsListView.UpdateQueryResults(
                         editedGraphSource,
                         FindStickyNotes(
+                            editedGraphSource,
+                            queryString.value));
+                }
+                else if (queryType.value == QueryType.States)
+                {
+                    queryResultsListView.UpdateQueryResults(
+                        editedGraphSource,
+                        FindStates(
+                            editedGraphSource,
+                            queryString.value));
+                }
+                else if (queryType.value == QueryType.StateTransitions)
+                {
+                    queryResultsListView.UpdateQueryResults(
+                        editedGraphSource,
+                        FindStateTransitions(
                             editedGraphSource,
                             queryString.value));
                 }
