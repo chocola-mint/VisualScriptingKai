@@ -1,6 +1,11 @@
 # VisualScriptingPlus
 
+
 Quality-of-life extensions to Unity Visual Scripting. Features not just a node search tool, but also other debugging tools as well. Visual Scripting Plus aims to give Unity Visual Scripting much-needed features to actually make it production-ready and competitive against well-known solutions like the Playmaker, and of course Unreal's Blueprint.
+
+Live demo featuring a [non-trivial Visual Scripting project](https://github.com/chocola-mint/U1W_ShijiQuest):
+
+https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/61d6870b-c937-4a53-bab1-e8907fe38a5a
 
 Feel free to request additional features in the [Issues](https://github.com/chocola-mint/VisualScriptingPlus/Issues) page.
 
@@ -11,6 +16,8 @@ Feel free to request additional features in the [Issues](https://github.com/choc
 A fuzzy search tool that can hunt down nodes and sticky notes in your graphs. Clicking the search results lets you jump straight to where the node is.
 
 You can also use the sticky note search tool as a way to hunt down TODOs. This can be a powerful tool that lets you navigate through a large graph with ease.
+
+Note that for elements that can have their names changed manually (Sticky Notes and State Transitions for example), they won't be reflected right away in the search results. Save the graph with Ctrl+S if you want to see it quickly.
 
 ### Graph Analyzer
 
