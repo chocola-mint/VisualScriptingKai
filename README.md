@@ -43,6 +43,19 @@ https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/95662b4f-e4a
 
 A powerful debugging node that lets you run Visual Scripting code anytime, anywhere, by just double-clicking on it. Use it as a way to test logic quickly.
 
+### Functions
+
+Functions are a more powerful and safer version of Events, defined using a Script Graph Asset. With the Function Start and Function Return nodes, you can implement a function that has the same ports as a Script Graph Asset (this asset is called the function definition). Other Script Machines can then use the Check Function or Has Function nodes to check if a GameObject implements a function, and if so, call it using the Call Function node.
+
+Every Function node must be assigned a function definition through the Graph Inspector (on your left).
+
+This feature unlocks Visual Scripting's potential for object-oriented programming, similar to Unreal's Blueprint interfaces. For example, you can use it to check if a bullet is colliding with something that can take damage (e.g., the player) or not (e.g., the wall).
+
+Notes:
+- You cannot implement the same function twice on the same GameObject.
+- A complete function implementation must include a Function Start and a Function Return, and they must be in the same Script Machine. The nodes Function Start and Function Return must be on the top level of the Script Machine's graph (if you put them inside Subgraphs, they will be ignored).
+- Calling a function on a GameObject that doesn't implement it is undefined behavior. You should always use Check Function to check if a target implements a function first. Or use Has Function with an If node.
+
 ## Requirements
 
 * This project is developed using Unity 2021.3.30f1, but should work with version 2021.3 and above in general.

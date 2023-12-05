@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: TakeDamage
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"Execute","label":null,"summary":null,"hideLabel":true}],"controlOutputDefinitions":[{"key":"StillAlive","label":null,"summary":null,"hideLabel":false},{"key":"Dead","label":null,"summary":null,"hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":false,"defaultValue":{"$content":0.0,"$type":"System.Single"},"_type":"System.Single","key":"Damage","label":null,"summary":null,"hideLabel":false}],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-88.0,"y":-232.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-306.0,"y":-297.0},"guid":"219135ec-d62d-42da-bb78-9a1972ee6e47","$version":"A","$type":"Unity.VisualScripting.GraphInput","$id":"13"},{"defaultValues":{},"position":{"x":39.0,"y":-290.0},"guid":"c55f8e65-7675-4fbd-a0f9-b7ae7b4bea9b","$version":"A","$type":"Unity.VisualScripting.GraphOutput","$id":"15"},{"sourceUnit":{"$ref":"13"},"sourceKey":"Execute","destinationUnit":{"$ref":"15"},"destinationKey":"StillAlive","guid":"d73881e5-0ebc-4de3-b64c-6ba47d2173d1","$type":"Unity.VisualScripting.ControlConnection"}],"$version":"A"}}'
+    _objectReferences: []

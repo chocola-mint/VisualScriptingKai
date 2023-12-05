@@ -2,11 +2,18 @@
     "name": "com.chocola-mint.visual-scripting-plus",
     "displayName": "Visual Scripting Plus",
     "description": "Quality-of-life extensions to Unity Visual Scripting. Features not just a node search tool, but also other debugging tools as well. Visual Scripting Plus aims to give Unity Visual Scripting much-needed features to actually make it production-ready and competitive against well-known solutions like the Playmaker, and of course Unreal's Blueprint.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "unity": "2021.3",
     "author": "ChocolaMint (https://github.com/chocola-mint)",
     "homepage": "https://github.com/VisualScriptingPlus#readme",
     "dependencies": {
         "com.unity.visualscripting": "1.9.1"
-    }
+    },
+    "samples": [
+        {
+            "displayName": "Function Demo",
+            "description": "Contains a demo for VSPlus functions.",
+            "path": "Samples~/FunctionDemo"
+        }
+    ]
 }
