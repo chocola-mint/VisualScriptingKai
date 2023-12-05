@@ -43,11 +43,28 @@ https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/95662b4f-e4a
 
 A powerful debugging node that lets you run Visual Scripting code anytime, anywhere, by just double-clicking on it. Use it as a way to test logic quickly.
 
-### Functions
+### Function Nodes
 
-Functions are a more powerful and safer version of Events, defined using a Script Graph Asset. With the Function Start and Function Return nodes, you can implement a function that has the same ports as a Script Graph Asset (this asset is called the function definition). Other Script Machines can then use the Check Function or Has Function nodes to check if a GameObject implements a function, and if so, call it using the Call Function node.
+(VSPlus > Functions)
+
+Functions are a more powerful and safer version of Events, defined using a Script Graph Asset, like this:
+
+![Function Definition](https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/1524a3d2-1d8a-4e5f-b6d0-9ea8728acdf3)
+
+
+With the Function Start and Function Return nodes, you can implement a function that has the same ports as a Script Graph Asset (this asset is called the function definition). 
+
+![Function Implementation](https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/9dd8d9c5-3256-4980-91f9-3448b34e563b)
+
+Other Script Machines can then use the Check Function or Has Function nodes to check if a GameObject implements a function, and if so, call it using the Call Function node.
+
+![Function Check and Call](https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/a205cdbf-38e0-4aff-ac18-f463f73ce782)
+
 
 Every Function node must be assigned a function definition through the Graph Inspector (on your left).
+
+![Assigning a Function Definition](https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/460ed564-5160-4bed-bb51-27bae9f6f095)
+
 
 This feature unlocks Visual Scripting's potential for object-oriented programming, similar to Unreal's Blueprint interfaces. For example, you can use it to check if a bullet is colliding with something that can take damage (e.g., the player) or not (e.g., the wall).
 
@@ -63,7 +80,7 @@ Notes:
 ## Installation
 
 * Visual Scripting Plus is distributed as a git package. Use Unity's [Package Manager](https://docs.unity3d.com/Manual/upm-ui-giturl.html) and install using this repository's URL: `https://github.com/chocola-mint/VisualScriptingPlus.git`
-* After installing, go to `Project Settings > Visual Scripting` and click `Regenerate Nodes` to enable the Test Node feature, if needed.
+* After installing, go to `Project Settings > Visual Scripting` and click `Regenerate Nodes` to enable the Test Node and Function Nodes feature, if needed.
 
 ## Limitations
 
