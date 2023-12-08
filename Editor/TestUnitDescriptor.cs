@@ -17,7 +17,7 @@ namespace CHM.VisualScriptingPlus.Editor
         // }
         protected override string DefinedSummary()
         {
-            return "Double click to execute this node."
+            return "Click on the Run button to execute this node."
             + "\nWorks in both Edit Mode and Play Mode."
             + "\nNote 1: Coroutine tests are only usable in Play Mode."
             + "\nNote 2: Exceptions in edit mode won't go away on their own. "

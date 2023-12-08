@@ -9,6 +9,6 @@ namespace CHM.VisualScriptingPlus
     [UnitCategory("Events\\VSPlus")]//Set the path to find the node in the fuzzy finder as Events > My Events.
     public class TestUnit : EventUnit<int>
     {
-        protected override bool register => true;
+        protected override bool register => false;
     }
 }

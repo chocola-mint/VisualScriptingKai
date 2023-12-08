@@ -9,13 +9,26 @@ namespace CHM.VisualScriptingPlus.Editor
     [Widget(typeof(TestUnit))]
     public class TestUnitWidget : UnitWidget<TestUnit>
     {
+        public override bool foregroundRequiresInput => true;
         public TestUnitWidget(FlowCanvas canvas, TestUnit unit) : base(canvas, unit)
         {
         }
-        protected override void OnDoubleClick()
+        
+        public override void DrawForeground()
         {
-            base.OnDoubleClick();
-            Execute();
+            base.DrawForeground();
+            // We implement the button here instead of using a custom button attribute
+            // on TestUnit, because crucially a node needs a GraphReference when triggered.
+            // Units don't have direct access to GraphReferences, but widgets do.
+            Rect buttonPosition = portsBackgroundPosition;
+            Vector2 margin = Vector2.one * 8;
+            buttonPosition.position += margin / 2;
+            buttonPosition.size -= margin;
+            buttonPosition.size -= Vector2.right * 22;
+            if(GUI.Button(buttonPosition, "Run"))
+            {
+                Execute();
+            }
         }
 
         private void Execute()
@@ -27,10 +40,12 @@ namespace CHM.VisualScriptingPlus.Editor
             }
             unit.Trigger(reference, 0);
         }
+
         private void ClearExceptions()
         {
             GraphUtility.ClearExceptionsInActiveWindow();
         }
+
         protected override IEnumerable<DropdownOption> contextOptions
         {
             get
