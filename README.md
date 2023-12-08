@@ -42,7 +42,7 @@ https://github.com/chocola-mint/VisualScriptingKai/assets/56677134/4d032869-56ef
 
 (Events > VS Kai > Test)
 
-A powerful debugging node that lets you run Visual Scripting code anytime, anywhere, by just double-clicking on it. Use it as a way to test logic quickly.
+A powerful debugging node that lets you run Visual Scripting code anytime, anywhere, by just clicking on the "Run" button. Use it as a way to test logic quickly.
 
 ### Function Nodes
 
