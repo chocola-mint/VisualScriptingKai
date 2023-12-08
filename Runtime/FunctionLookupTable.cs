@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace CHM.VisualScriptingPlus
+namespace CHM.VisualScriptingKai
 {
     /// <summary>
     /// A lookup table that maps function definitions (ScriptGraphAssets) to implementations.

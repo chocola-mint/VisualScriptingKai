@@ -6,7 +6,7 @@ using System.Linq;
 using UnityEditor;
 using System;
 
-namespace CHM.VisualScriptingPlus.Editor
+namespace CHM.VisualScriptingKai.Editor
 {
     public static partial class GraphTraversalUtility
     {

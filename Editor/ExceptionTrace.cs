@@ -4,7 +4,7 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace CHM.VisualScriptingPlus.Editor
+namespace CHM.VisualScriptingKai.Editor
 {
     public struct ExceptionTrace : IGraphElementTrace
     {

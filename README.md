@@ -1,15 +1,16 @@
-# VisualScriptingPlus
+# VisualScriptingKai
 
+Previously known as VisualScriptingPlus (name changed due to overlap with existing Asset Store product).
 
-Quality-of-life extensions to Unity Visual Scripting. Features not just a node search tool, but also other debugging tools as well. Visual Scripting Plus aims to give Unity Visual Scripting much-needed features to actually make it production-ready and competitive against well-known solutions like the Playmaker, and of course Unreal's Blueprint.
+Quality-of-life extensions to Unity Visual Scripting. Features not just a node search tool, but also other debugging tools as well. Visual Scripting Kai aims to give Unity Visual Scripting much-needed features to actually make it production-ready and competitive against well-known solutions like the Playmaker, and of course Unreal's Blueprint.
 
 Live demo featuring a [non-trivial Visual Scripting project](https://github.com/chocola-mint/U1W_ShijiQuest):
 
-https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/a8523873-c5b5-4836-9e55-5f607c9865a6
+https://github.com/chocola-mint/VisualScriptingKai/assets/56677134/a8523873-c5b5-4836-9e55-5f607c9865a6
 
-(The project above has over 700 graph units, over 50 states, and over 40 state transitions, yet Visual Scripting Plus still performs extremely smoothly!)
+(The project above has over 700 graph units, over 50 states, and over 40 state transitions, yet Visual Scripting Kai still performs extremely smoothly!)
 
-Feel free to request additional features in the [Issues](https://github.com/chocola-mint/VisualScriptingPlus/Issues) page.
+Feel free to request additional features in the [Issues](https://github.com/chocola-mint/VisualScriptingKai/Issues) page.
 
 ## Features
 
@@ -37,33 +38,33 @@ A runtime tool that automatically pauses the game in Play Mode whenever a graph 
 
 ### Test Node
 
-https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/95662b4f-e4ae-4c6d-9547-011eb86e842a
+https://github.com/chocola-mint/VisualScriptingKai/assets/56677134/95662b4f-e4ae-4c6d-9547-011eb86e842a
 
-(Events > VS Plus > Test)
+(Events > VS Kai > Test)
 
 A powerful debugging node that lets you run Visual Scripting code anytime, anywhere, by just double-clicking on it. Use it as a way to test logic quickly.
 
 ### Function Nodes
 
-(VSPlus > Functions)
+(VSKai > Functions)
 
 Functions are a more powerful and safer version of Events, defined using a Script Graph Asset, like this:
 
-![Function Definition](https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/1524a3d2-1d8a-4e5f-b6d0-9ea8728acdf3)
+![Function Definition](https://github.com/chocola-mint/VisualScriptingKai/assets/56677134/1524a3d2-1d8a-4e5f-b6d0-9ea8728acdf3)
 
 
 With the Function Start and Function Return nodes, you can implement a function that has the same ports as a Script Graph Asset (this asset is called the function definition). 
 
-![Function Implementation](https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/9dd8d9c5-3256-4980-91f9-3448b34e563b)
+![Function Implementation](https://github.com/chocola-mint/VisualScriptingKai/assets/56677134/9dd8d9c5-3256-4980-91f9-3448b34e563b)
 
 Other Script Machines can then use the Check Function or Has Function nodes to check if a GameObject implements a function, and if so, call it using the Call Function node.
 
-![Function Check and Call](https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/a205cdbf-38e0-4aff-ac18-f463f73ce782)
+![Function Check and Call](https://github.com/chocola-mint/VisualScriptingKai/assets/56677134/a205cdbf-38e0-4aff-ac18-f463f73ce782)
 
 
 Every Function node must be assigned a function definition through the Graph Inspector (on your left).
 
-![Assigning a Function Definition](https://github.com/chocola-mint/VisualScriptingPlus/assets/56677134/460ed564-5160-4bed-bb51-27bae9f6f095)
+![Assigning a Function Definition](https://github.com/chocola-mint/VisualScriptingKai/assets/56677134/460ed564-5160-4bed-bb51-27bae9f6f095)
 
 
 This feature unlocks Visual Scripting's potential for object-oriented programming, similar to Unreal's Blueprint interfaces. For example, you can use it to check if a bullet is colliding with something that can take damage (e.g., the player) or not (e.g., the wall).
@@ -79,9 +80,9 @@ Notes:
 
 ## Installation
 
-* Visual Scripting Plus is distributed as a git package. Use Unity's [Package Manager](https://docs.unity3d.com/Manual/upm-ui-giturl.html) and install using this repository's URL: `https://github.com/chocola-mint/VisualScriptingPlus.git`
+* Visual Scripting Kai is distributed as a git package. Use Unity's [Package Manager](https://docs.unity3d.com/Manual/upm-ui-giturl.html) and install using this repository's URL: `https://github.com/chocola-mint/VisualScriptingKai.git`
 * After installing, go to `Project Settings > Visual Scripting` and click `Regenerate Nodes` to enable the Test Node and Function Nodes feature, if needed.
 
 ## Limitations
 
-Support for embedded graphs inside scenes and prefabs is limited due to technical limitations. (For example, Graph Lens and the like can only detect them if they are currently open) Avoid them whenever possible to make the best use out of Visual Scripting Plus.
+Support for embedded graphs inside scenes and prefabs is limited due to technical limitations. (For example, Graph Lens and the like can only detect them if they are currently open) Avoid them whenever possible to make the best use out of Visual Scripting Kai.

@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
-namespace CHM.VisualScriptingPlus.Editor
+namespace CHM.VisualScriptingKai.Editor
 {
     public class GraphAssetListTracker : AssetPostprocessor
     {

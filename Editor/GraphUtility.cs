@@ -7,7 +7,7 @@ using UnityEditor;
 using System.Text.RegularExpressions;
 using UnityEditor.Search;
 
-namespace CHM.VisualScriptingPlus.Editor
+namespace CHM.VisualScriptingKai.Editor
 {
     public static class GraphUtility
     {

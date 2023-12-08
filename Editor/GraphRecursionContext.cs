@@ -4,7 +4,7 @@ using UnityEngine;
 using Unity.VisualScripting;
 using System;
 
-namespace CHM.VisualScriptingPlus.Editor
+namespace CHM.VisualScriptingKai.Editor
 {
     /// <summary>
     /// Internal data structure that keeps track of the visited set to avoid repeats,

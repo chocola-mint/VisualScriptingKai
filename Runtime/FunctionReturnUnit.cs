@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.VisualScripting;
 
-namespace CHM.VisualScriptingPlus
+namespace CHM.VisualScriptingKai
 {
     [UnitTitle("Function Return")]
-    [UnitCategory("VSPlus\\Functions")]
+    [UnitCategory("VSKai\\Functions")]
     public class FunctionReturnUnit : Unit, IFunctionUnit
     {
         [Serialize, Inspectable]

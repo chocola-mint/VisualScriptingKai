@@ -3,11 +3,11 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
 using System.Collections.Generic;
-using static CHM.VisualScriptingPlus.Editor.GraphUtility;
+using static CHM.VisualScriptingKai.Editor.GraphUtility;
 using Unity.VisualScripting;
 using System.Linq;
 
-namespace CHM.VisualScriptingPlus.Editor
+namespace CHM.VisualScriptingKai.Editor
 {
     // TODO: Search for warnings ((IUnit.Analysis() as UnitAnalysis).warnings)
     // TODO: [Future work] Operations on query items (maybe replace-all is possible?)
@@ -51,7 +51,7 @@ namespace CHM.VisualScriptingPlus.Editor
             VisualElement root = rootVisualElement;
 
             // Import UXML
-            var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/com.chocola-mint.visual-scripting-plus/Editor/Resources/GraphLensWindow.uxml");
+            var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/com.chocola-mint.visual-scripting-kai/Editor/Resources/GraphLensWindow.uxml");
             VisualElement visualTreeRoot = visualTree.Instantiate();
             root.Add(visualTreeRoot);
 

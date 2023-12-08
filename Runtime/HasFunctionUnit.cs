@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace CHM.VisualScriptingPlus
+namespace CHM.VisualScriptingKai
 {
     [UnitTitle("Has Function")]
-    [UnitCategory("VSPlus\\Functions")]
+    [UnitCategory("VSKai\\Functions")]
     public class HasFunctionUnit : Unit, IFunctionUnit
     {
         [Serialize, Inspectable]

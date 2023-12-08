@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace CHM.VisualScriptingPlus.Editor
+namespace CHM.VisualScriptingKai.Editor
 {
     public class GraphDebuggerWindow : GraphQueryWindowBase, IHasCustomMenu
     {
@@ -29,7 +29,7 @@ namespace CHM.VisualScriptingPlus.Editor
             VisualElement root = rootVisualElement;
 
             // Import UXML
-            var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/com.chocola-mint.visual-scripting-plus/Editor/Resources/GraphDebuggerWindow.uxml");
+            var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/com.chocola-mint.visual-scripting-kai/Editor/Resources/GraphDebuggerWindow.uxml");
             VisualElement visualTreeRoot = visualTree.Instantiate();
             root.Add(visualTreeRoot);
 

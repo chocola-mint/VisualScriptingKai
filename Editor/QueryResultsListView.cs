@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace CHM.VisualScriptingPlus.Editor
+namespace CHM.VisualScriptingKai.Editor
 {
     public class QueryResultsListView : ListView
     {
@@ -44,7 +44,7 @@ namespace CHM.VisualScriptingPlus.Editor
         {
             var listContainer = this.Q("unity-content-container");
             Debug.Assert(listContainer != null);
-            var queryResultEntryAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/com.chocola-mint.visual-scripting-plus/Editor/Resources/QueryResultEntry.uxml");
+            var queryResultEntryAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/com.chocola-mint.visual-scripting-kai/Editor/Resources/QueryResultEntry.uxml");
             makeItem = () => {
                 var queryResultEntry = queryResultEntryAsset.CloneTree();
                 queryResultEntry.userData = new QueryResultsEntry(queryResultEntry, listContainer);

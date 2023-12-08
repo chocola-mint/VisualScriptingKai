@@ -1,6 +1,6 @@
 {
-    "name": "CHM.VisualScriptingPlus.Editor",
-    "rootNamespace": "CHM.VisualScriptingPlus.Editor",
+    "name": "CHM.VisualScriptingKai.Editor",
+    "rootNamespace": "CHM.VisualScriptingKai.Editor",
     "references": [
         "GUID:21b0c8d1703a94250bfac916590cea4f",
         "GUID:54cb1906aeb4e4264bc1d2aa3818a43f",

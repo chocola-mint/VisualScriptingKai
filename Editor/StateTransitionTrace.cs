@@ -4,7 +4,7 @@ using UnityEngine;
 using Unity.VisualScripting;
 using UnityEditor;
 
-namespace CHM.VisualScriptingPlus.Editor
+namespace CHM.VisualScriptingKai.Editor
 {
     public struct StateTransitionTrace : IGraphElementTrace
     {

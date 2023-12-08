@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace CHM.VisualScriptingPlus
+namespace CHM.VisualScriptingKai
 {
     public sealed class FunctionCallStack
     {
@@ -13,7 +13,7 @@ namespace CHM.VisualScriptingPlus
             public FunctionCallUnit caller;
             public GraphStack callerGraphStack;
         }
-        public const string FlowVariableKey = "##VSPlusFunctionCallStack";
+        public const string FlowVariableKey = "##VSKaiFunctionCallStack";
         public readonly Stack<Frame> stack = new();
         public void PropagateException(Flow flow, System.Exception ex)
         {

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.VisualScripting;
 
-namespace CHM.VisualScriptingPlus
+namespace CHM.VisualScriptingKai
 {
     [UnitTitle("Function Start")]
-    [UnitCategory("VSPlus\\Functions")]
+    [UnitCategory("VSKai\\Functions")]
     public class FunctionStartUnit : Unit, IFunctionUnit
     {
         [Serialize, Inspectable]

@@ -1,3 +1,3 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <CHM.VisualScriptingPlus.Editor.QueryResultsListView focusable="true" name="query-results" view-data-key="graph-lens-query-results" fixed-item-height="60" horizontal-scrolling="true" style="height: 100%; max-height: none;" />
+    <CHM.VisualScriptingKai.Editor.QueryResultsListView focusable="true" name="query-results" view-data-key="graph-lens-query-results" fixed-item-height="60" horizontal-scrolling="true" style="height: 100%; max-height: none;" />
 </ui:UXML>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.VisualScripting;
 
-namespace CHM.VisualScriptingPlus.Editor
+namespace CHM.VisualScriptingKai.Editor
 {
     public abstract class FunctionUnitDescriptor<TFunctionUnit> : UnitDescriptor<TFunctionUnit>
     where TFunctionUnit : Unit, IFunctionUnit

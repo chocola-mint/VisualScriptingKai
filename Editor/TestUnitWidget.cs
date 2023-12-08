@@ -4,7 +4,7 @@ using UnityEngine;
 using Unity.VisualScripting;
 using System;
 
-namespace CHM.VisualScriptingPlus.Editor
+namespace CHM.VisualScriptingKai.Editor
 {
     [Widget(typeof(TestUnit))]
     public class TestUnitWidget : UnitWidget<TestUnit>

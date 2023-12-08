@@ -4,7 +4,7 @@ using UnityEngine;
 using Unity.VisualScripting;
 using UnityEditor;
 
-namespace CHM.VisualScriptingPlus.Editor
+namespace CHM.VisualScriptingKai.Editor
 {
     /// <summary>
     /// Union class that lets all kinds of graph assets share the same API, without excessive code duplication.

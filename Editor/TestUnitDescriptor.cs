@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace CHM.VisualScriptingPlus.Editor
+namespace CHM.VisualScriptingKai.Editor
 {
     [Descriptor(typeof(TestUnit))]
     public class TestUnitDescriptor<TEvent> : UnitDescriptor<TEvent>

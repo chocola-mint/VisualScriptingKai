@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEditor;
 using UnityEngine.UIElements;
 using System.Linq;
-using static CHM.VisualScriptingPlus.Editor.GraphUtility;
+using static CHM.VisualScriptingKai.Editor.GraphUtility;
 using Unity.VisualScripting;
 
-namespace CHM.VisualScriptingPlus.Editor
+namespace CHM.VisualScriptingKai.Editor
 {
     public class GraphAnalyzerWindow : GraphQueryWindowBase
     {
@@ -40,7 +40,7 @@ namespace CHM.VisualScriptingPlus.Editor
             VisualElement root = rootVisualElement;
 
             // Import UXML
-            var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/com.chocola-mint.visual-scripting-plus/Editor/Resources/GraphAnalyzerWindow.uxml");
+            var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/com.chocola-mint.visual-scripting-kai/Editor/Resources/GraphAnalyzerWindow.uxml");
             VisualElement visualTreeRoot = visualTree.Instantiate();
             root.Add(visualTreeRoot);
 

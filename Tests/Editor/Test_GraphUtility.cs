@@ -7,11 +7,11 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace CHM.VisualScriptingPlus.Editor.Tests
+namespace CHM.VisualScriptingKai.Editor.Tests
 {
     public class Test_GraphUtility
     {
-        const string TestDirectory = "Packages/com.chocola-mint.visual-scripting-plus/Tests/Editor/";
+        const string TestDirectory = "Packages/com.chocola-mint.visual-scripting-kai/Tests/Editor/";
         [Test]
         public void TestGraphQueries()
         {

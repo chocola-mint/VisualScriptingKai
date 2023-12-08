@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace CHM.VisualScriptingPlus.Editor
+namespace CHM.VisualScriptingKai.Editor
 {
     // ! You may need to close all windows every time you change EditorWindow code.
     public abstract class GraphQueryWindowBase : EditorWindow
