@@ -38,7 +38,7 @@ A runtime tool that automatically pauses the game in Play Mode whenever a graph 
 
 ### Test Node
 
-https://github.com/chocola-mint/VisualScriptingKai/assets/56677134/95662b4f-e4ae-4c6d-9547-011eb86e842a
+https://github.com/chocola-mint/VisualScriptingKai/assets/56677134/4d032869-56ef-4838-b5bb-8cbb299d887b
 
 (Events > VS Kai > Test)
 
