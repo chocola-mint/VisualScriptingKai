@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace CHM.VisualScriptingKai
 {
+    [UnitSurtitle("Flow Coroutine")]
     [UnitTitle("Stop All Flow Coroutines")]
     [UnitCategory("VSKai\\Coroutines")]
     public class FlowCoroutineStopAllUnit : Unit
