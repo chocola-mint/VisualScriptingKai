@@ -74,6 +74,18 @@ Notes:
 - A complete function implementation must include a Function Start and a Function Return, and they must be in the same Script Machine. The nodes Function Start and Function Return must be on the top level of the Script Machine's graph (if you put them inside Subgraphs, they will be ignored).
 - Calling a function on a GameObject that doesn't implement it is undefined behavior. You should always use Check Function to check if a target implements a function first. Or use Has Function with an If node.
 
+### Flow Coroutines
+
+
+https://github.com/chocola-mint/VisualScriptingKai/assets/56677134/9317eed6-465a-4e84-bc5b-208a17b982e3
+
+
+(VSKai > Coroutines)
+
+Flow Coroutines are coroutines that can be launched from **any** node, and not just Events. The Start Flow Coroutine node can be used to launch a new Flow Coroutine. The logic of the Flow Coroutine is defined by the "Coroutine Start" port. You can also use the Flow Coroutine object returned by Start Flow Coroutine later, for example stopping it with the Stop Flow Coroutine node.
+
+Flow Coroutines follow the same rules as any other coroutine - they belong to the GameObject they are spawned on, and will be stopped when the GameObject becomes inactive.
+
 ## Requirements
 
 * This project is developed using Unity 2021.3.30f1, but should work with version 2021.3 and above in general.
