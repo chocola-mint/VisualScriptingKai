@@ -92,7 +92,8 @@ namespace CHM.VisualScriptingKai.Editor
 
         protected override string DefinedSummary()
         {
-            return "Check if the given Flow Coroutine is still running.";
+            return "Checks if the given Flow Coroutine is still running. "
+            + "If you want to wait for a Flow Coroutine to finish, consider using Wait For Flow Coroutine instead.";
         }
 
         protected override void DefinedPort(IUnitPort port, UnitPortDescription description)
