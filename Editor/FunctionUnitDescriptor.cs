@@ -34,7 +34,7 @@ namespace CHM.VisualScriptingKai.Editor
             return base.DefinedTitle();
         }
 
-        protected override string DefaultSummary()
+        protected override string DefinedSummary()
         {
             return "Check if the target GameObject implements a function "
             + "with the same function definition as this node.";
@@ -55,7 +55,7 @@ namespace CHM.VisualScriptingKai.Editor
             return base.DefinedTitle();
         }
 
-        protected override string DefaultSummary()
+        protected override string DefinedSummary()
         {
             return "Check if the target GameObject implements a function "
             + "with the same function definition as this node, and output the answer.";
@@ -76,7 +76,7 @@ namespace CHM.VisualScriptingKai.Editor
             return base.DefinedTitle();
         }
         
-        protected override string DefaultSummary()
+        protected override string DefinedSummary()
         {
             return "The start of a function implementation. " 
             + "This node's ports will change according to its function definition.";
@@ -97,7 +97,7 @@ namespace CHM.VisualScriptingKai.Editor
             return base.DefinedTitle();
         }
         
-        protected override string DefaultSummary()
+        protected override string DefinedSummary()
         {
             return "The end of a function implementation. " 
             + "This node's ports will change according to its function definition.";
@@ -118,7 +118,7 @@ namespace CHM.VisualScriptingKai.Editor
             return base.DefinedTitle();
         }
         
-        protected override string DefaultSummary()
+        protected override string DefinedSummary()
         {
             return "Call the specified function implemented by the target GameObject. " 
             + "This node's ports will change according to its function definition.";
