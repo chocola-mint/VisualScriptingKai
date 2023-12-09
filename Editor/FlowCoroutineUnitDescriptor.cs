@@ -69,6 +69,19 @@ namespace CHM.VisualScriptingKai.Editor
             }
         }
     }
+    
+    [Descriptor(typeof(FlowCoroutineStopAllUnit))]
+    public class FlowCoroutineStopAllUnitDescriptor : FlowCoroutineUnitDescriptor<FlowCoroutineStopAllUnit>
+    {
+        public FlowCoroutineStopAllUnitDescriptor(FlowCoroutineStopAllUnit target) : base(target)
+        {
+        }
+
+        protected override string DefinedSummary()
+        {
+            return "Stops all running Flow Coroutines.";
+        }
+    }
 
     [Descriptor(typeof(FlowCoroutineWaitUnit))]
     public class FlowCoroutineWaitUnitDescriptor : UnitDescriptor<FlowCoroutineWaitUnit>
