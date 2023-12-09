@@ -19,7 +19,7 @@ namespace CHM.VisualScriptingKai
         public ValueInput flowCoroutine { get; private set; } // Flow
         protected override void Definition()
         {
-            flowCoroutine = ValueInput<Flow>("flowCoroutine");
+            flowCoroutine = ValueInput<Flow>(nameof(flowCoroutine));
             enter = ControlInput(nameof(enter), flow =>
             {
                 var flowToStop = flow.GetValue<Flow>(flowCoroutine);
