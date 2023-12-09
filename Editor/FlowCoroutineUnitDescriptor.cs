@@ -82,6 +82,29 @@ namespace CHM.VisualScriptingKai.Editor
             return "Stops all running Flow Coroutines.";
         }
     }
+    
+    [Descriptor(typeof(FlowCoroutineIsRunningUnit))]
+    public class FlowCoroutineIsRunningUnitDescriptor : FlowCoroutineUnitDescriptor<FlowCoroutineIsRunningUnit>
+    {
+        public FlowCoroutineIsRunningUnitDescriptor(FlowCoroutineIsRunningUnit target) : base(target)
+        {
+        }
+
+        protected override string DefinedSummary()
+        {
+            return "Check if the given Flow Coroutine is still running.";
+        }
+
+        protected override void DefinedPort(IUnitPort port, UnitPortDescription description)
+        {
+            base.DefinedPort(port, description);
+            if (port == target.flowCoroutine)
+            {
+                description.icon = typeof(Coroutine).Icon();
+                description.summary = "The coroutine to check.";
+            }
+        }
+    }
 
     [Descriptor(typeof(FlowCoroutineWaitUnit))]
     public class FlowCoroutineWaitUnitDescriptor : UnitDescriptor<FlowCoroutineWaitUnit>
