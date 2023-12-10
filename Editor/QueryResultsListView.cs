@@ -44,7 +44,7 @@ namespace CHM.VisualScriptingKai.Editor
         {
             var listContainer = this.Q("unity-content-container");
             Debug.Assert(listContainer != null);
-            var queryResultEntryAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/com.chocola-mint.visual-scripting-kai/Editor/Resources/QueryResultEntry.uxml");
+            var queryResultEntryAsset = PackageUtility.LoadPackageAsset<VisualTreeAsset>("Editor/Resources/QueryResultEntry.uxml");
             makeItem = () => {
                 var queryResultEntry = queryResultEntryAsset.CloneTree();
                 queryResultEntry.userData = new QueryResultsEntry(queryResultEntry, listContainer);

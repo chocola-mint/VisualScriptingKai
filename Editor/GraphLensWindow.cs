@@ -51,7 +51,7 @@ namespace CHM.VisualScriptingKai.Editor
             VisualElement root = rootVisualElement;
 
             // Import UXML
-            var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/com.chocola-mint.visual-scripting-kai/Editor/Resources/GraphLensWindow.uxml");
+            var visualTree = PackageUtility.LoadPackageAsset<VisualTreeAsset>("Editor/Resources/GraphLensWindow.uxml");
             VisualElement visualTreeRoot = visualTree.Instantiate();
             root.Add(visualTreeRoot);
 
