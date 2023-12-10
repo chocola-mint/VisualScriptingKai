@@ -7,7 +7,7 @@
     "author": "ChocolaMint (https://github.com/chocola-mint)",
     "homepage": "https://github.com/VisualScriptingKai#readme",
     "dependencies": {
-        "com.unity.visualscripting": "1.9.1"
+        "com.unity.visualscripting": "1.8.0"
     },
     "samples": [
         {
