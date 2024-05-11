@@ -37,7 +37,8 @@ namespace CHM.VisualScriptingKai.Editor
             FetchElement(root, "query-results", out queryResultsListView);
 
             debugEnabled.value = EditorPrefs.GetBool(EditorPrefKeys.DebugEnabled, false);
-            debugEnabled.RegisterValueChangedCallback(changeEvent => {
+            debugEnabled.RegisterValueChangedCallback(changeEvent => 
+            {
                 EditorPrefs.SetBool(EditorPrefKeys.DebugEnabled, changeEvent.newValue);
             });
             queryResultsListView = root.Q<QueryResultsListView>("query-results");

@@ -50,7 +50,8 @@ namespace CHM.VisualScriptingKai.Editor
             FetchElement(visualTreeRoot, "query-results", out queryResultsListView);
 
             queryFolders.value = EditorPrefs.GetString(EditorPrefKeys.QueryFolders, "Assets");
-            queryFolders.RegisterValueChangedCallback(changeEvent => {
+            queryFolders.RegisterValueChangedCallback(changeEvent => 
+            {
                 EditorPrefs.SetString(EditorPrefKeys.QueryFolders, queryFolders.value);
                 // Folders changed, so the cache needs to be updated.
                 UpdateGraphAssetSourceCache();
