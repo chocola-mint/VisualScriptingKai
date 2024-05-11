@@ -2,7 +2,7 @@
     "name": "com.chocola-mint.visual-scripting-kai",
     "displayName": "Visual Scripting Kai",
     "description": "Quality-of-life extensions to Unity Visual Scripting. Features not just a node search tool, but also other debugging tools as well. Visual Scripting Plus aims to give Unity Visual Scripting much-needed features to actually make it production-ready and competitive against well-known solutions like the Playmaker, and of course Unreal's Blueprint.",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "unity": "2021.3",
     "author": "ChocolaMint (https://github.com/chocola-mint)",
     "homepage": "https://github.com/VisualScriptingKai#readme",
