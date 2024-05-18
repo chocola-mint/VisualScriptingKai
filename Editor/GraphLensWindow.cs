@@ -93,7 +93,9 @@ namespace CHM.VisualScriptingKai.Editor
                 else
                 {
                     queryFolders.parent.Insert(queryFolders.parent.IndexOf(queryObject) + 1, queryString);
-                    queryFolders.parent.Remove(queryObject);
+                    if (queryObject.parent == queryFolders.parent)
+                        queryFolders.parent.Remove(queryObject);
+                    if (queryRefresh.parent == queryFolders.parent)
                     queryFolders.parent.Remove(queryRefresh);
                 }
                 ExecuteQuery();
