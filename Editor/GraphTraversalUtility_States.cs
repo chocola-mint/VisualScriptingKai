@@ -44,6 +44,8 @@ namespace CHM.VisualScriptingKai.Editor
         }
         private static IEnumerable<(IState, List<Guid>)> GetStatesRecursiveInternal(FlowGraph graph, GraphRecursionContext context)
         {
+            if (graph == null)
+                yield break;
             if(context.visited.Contains(graph))
                 yield break;
             context.visited.Add(graph);
@@ -87,6 +89,8 @@ namespace CHM.VisualScriptingKai.Editor
         }
         private static IEnumerable<(IState, List<Guid>)> GetStatesRecursiveInternal(this StateGraph graph, GraphRecursionContext context)
         {
+            if (graph == null)
+                yield break;
             // Note that the base case here is handled by FlowGraph version of GetStatesRecursive.
             // We only care about units and not states here.
             if(context.visited.Contains(graph))
